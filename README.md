@@ -11,3 +11,9 @@ Run the following in the project folder to install the packages:
 ```
 npm i
 ```
+
+Run the local server with:
+
+```
+npm run serve
+```
