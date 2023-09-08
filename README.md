@@ -1,19 +1,13 @@
-# vue3-reaction-timer
+# Welcome!
 
-## Project setup
-```
-yarn install
-```
+This project is a simple reaction timer game to test out Vue 3.
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+## To install
 
-### Compiles and minifies for production
-```
-yarn build
-```
+Clone the repo.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Run the following in the project folder to install the packages:
+
+```
+npm i
+```
