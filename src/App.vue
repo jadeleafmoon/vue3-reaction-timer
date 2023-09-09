@@ -2,7 +2,7 @@
   <h1>Hi!</h1>
   <button @click="start" :disabled="isPlaying">Play</button>
   <Block v-if="isPlaying" :delay="delay" @end="endGame"/>
-  <p> Reaction time: {{ score }}</p>
+  <p v-if="showResults"> Reaction time: {{ score }} ms</p>
 </template>
 
 <script>
@@ -17,16 +17,19 @@ export default {
       isPlaying: false,
       delay: null,
       score: null,
+      showResults: false,
     }
   },
   methods: {
     start() {
+      this.showResults = false
       this.delay = 1000 + (Math.random() * 1000)
       this.isPlaying = true
     },
     endGame(reactionTime) {
       this.score = reactionTime
       this.isPlaying = false
+      this.showResults = true
     }
   },
 }
